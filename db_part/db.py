@@ -1,7 +1,7 @@
 from sqlmodel import SQLModel, Session, create_engine, text
 from datetime import datetime
 from pathlib import Path
-
+from models import *
 class DBManager:
     db_name = '' # defaults to postgres
     db_url = f"postgresql+psycopg2://postgres:@localhost/{db_name}"
