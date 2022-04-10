@@ -4,7 +4,9 @@ from pathlib import Path
 from models import *
 class DBManager:
     db_name = '' # defaults to postgres
-    db_url = f"postgresql+psycopg2://postgres:@localhost/{db_name}"
+    password = ''
+    host = 'localhost'
+    db_url = f"postgresql+psycopg2://postgres:{password}@{host}/{db_name}"
     engine = create_engine(db_url)
 
     @classmethod
