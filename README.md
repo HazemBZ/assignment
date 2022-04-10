@@ -1,6 +1,6 @@
 
 ## Requirements:
-+ PostgresSQL up and running (or you can manually change parameters for another SGBD)
++ PostgresSQL up and running on port 5432 (or you can manually change parameters for another SGBD)
 + Python3.9+ (tested only on python 3.9)
 
 ## Installation:
