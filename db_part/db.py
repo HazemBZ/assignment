@@ -5,11 +5,10 @@ from pathlib import Path
 class DBManager:
     db_name = '' # defaults to postgres
     db_url = f"postgresql+psycopg2://postgres:@localhost/{db_name}"
-    engine = create_engine(db_url) # echo 'True' will make engine print all the SQL statements it executes
+    engine = create_engine(db_url)
 
     @classmethod
     def create_tables(cls):
-        # Whenerver classes inherit from SQLModel && cofigured with `table=True` they are registered in the `metadata` attribute
         SQLModel.metadata.create_all(cls.engine) # creates all the tables
 
                 

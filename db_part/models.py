@@ -2,21 +2,6 @@ from typing import Optional
 from sqlmodel import SQLModel, Field
 from datetime import datetime
 
-
-# class Team(SQLModel, table=True):
-#     id: Optional[int] = Field(default=None, primary_key=True)
-#     name: str = Field(index=True)
-#     headquarters: str
-
-
-# class Hero(SQLModel, table=True):
-#     id: Optional[int] = Field(default=None, primary_key=True)
-#     name: str
-#     age: Optional[int] = None
-
-#     team_id: Optional[int] = Field(default=None, foreign_key="team.id")
-
-
 ## Assignment
 
 class TypZanr(SQLModel, table=True): # genere type

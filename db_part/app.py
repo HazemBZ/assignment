@@ -12,8 +12,8 @@ from db import DBManager
 if __name__ == "__main__":
     
     ## Run once
-    # DBManager.create_tables() 
-    # DBManager.create_records() 
+    DBManager.create_tables() 
+    DBManager.create_records() 
 
     ## Queries
     DBManager.exec_query1()
